@@ -128,8 +128,6 @@ After running the above script, the output will be saved in the `augmented_datas
 │   ├── img4_rotate.jpg
 │   ├── img4_blur.jpg
 ```
-
-- Each image is augmented and saved with a `_mix_X` suffix (where `X` is the variation number).
 - The folder structure is preserved for each class (e.g., `class1/`, `class2/`), making it easy to use the augmented dataset for machine learning.
 
 ---
