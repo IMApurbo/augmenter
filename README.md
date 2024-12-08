@@ -24,7 +24,7 @@ pip install augmenter
 
 ---
 
-## Usage
+## Usage-1
 
 ### Basic Augmentation
 To apply augmentations to all images in a folder, preserving the directory structure, use the following code:
@@ -75,6 +75,58 @@ augmented_dataset/
 │   ├── img4_mix_1.jpg
 │   ├── img4_mix_2.jpg
 │   ├── img4_mix_3.jpg
+```
+
+- Each image is augmented and saved with a `_mix_X` suffix (where `X` is the variation number).
+- The folder structure is preserved for each class (e.g., `class1/`, `class2/`), making it easy to use the augmented dataset for machine learning.
+
+---
+## Usage-2
+
+### Basic Augmentation
+To apply augmentations to all images in a folder, preserving the directory structure, use the following code:
+
+```python
+from augment_labeler import Augmenter
+
+augmenter = Augmenter()
+augmented_count = augmenter.apply(
+    image_dir="./dataset", 
+    augmentations=["flip", "rotate", "blur"], 
+    save_path="./augmented_dataset"
+)
+
+print(f"Total augmented images created: {augmented_count}")
+```
+
+### Output Structure
+
+After running the above script, the output will be saved in the `augmented_dataset` folder, preserving the original folder structure with the added augmentation variations. The directory structure will look like this:
+
+```
+/your_project/
+├── dataset/
+│   ├── class1/
+│   │   ├── img1.jpg
+│   │   ├── img2.jpg
+│   ├── class2/
+│   │   ├── img3.jpg
+│   ├── img4.jpg
+├── augmented_dataset/
+│   ├── class1/
+│   │   ├── img1_flip.jpg
+│   │   ├── img1_rotate.jpg
+│   │   ├── img1_blur.jpg
+│   │   ├── img2_flip.jpg
+│   │   ├── img2_rotate.jpg
+│   │   ├── img2_blur.jpg
+│   ├── class2/
+│   │   ├── img3_flip.jpg
+│   │   ├── img3_rotate.jpg
+│   │   ├── img3_blur.jpg
+│   ├── img4_flip.jpg
+│   ├── img4_rotate.jpg
+│   ├── img4_blur.jpg
 ```
 
 - Each image is augmented and saved with a `_mix_X` suffix (where `X` is the variation number).
