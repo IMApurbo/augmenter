@@ -115,7 +115,7 @@ This project is licensed under the MIT License. See the [LICENSE](https://github
 
 ## Release Notes
 
-### v1.0.0
+### v0.1.0
 - Initial release.
 - Support for multiple augmentations and structured dataset output.
 - Added random augmentation mixing and customizable variations.
@@ -124,4 +124,4 @@ This project is licensed under the MIT License. See the [LICENSE](https://github
 
 ## Author
 
-Developed by **[Your Name](https://github.com/IMApurbo)**. Feel free to reach out with questions, suggestions, or contributions!
+Developed by **[AKM Korishee Apurbo](https://github.com/IMApurbo)**. Feel free to reach out with questions, suggestions, or contributions!
