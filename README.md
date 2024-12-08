@@ -1,5 +1,3 @@
----
-
 # Augmenter: Advanced Image Augmentation Library
 
 **Augmenter** is a Python library designed to simplify **image augmentation** for machine learning and deep learning projects. It provides an easy-to-use interface to apply a variety of augmentation techniques and supports **randomized augmentation mixing** to generate diverse variations of each image.
